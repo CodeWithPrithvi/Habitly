@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightest"
+    android:layout_marginBottom="5dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habitly"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:fontFamily="@font/font1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build better habits, one day at a time."
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:fontFamily="@font/font2"/>
+        </LinearLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/morelight"
+            app:boxStrokeColor="@color/light"
+            app:cursorColor="@color/light"
+            app:placeholderTextColor="@color/light"
+            app:hintTextColor="@color/light"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/baseline_add_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newHabbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter habbit here" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
